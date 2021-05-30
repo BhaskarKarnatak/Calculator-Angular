@@ -1,8 +1,9 @@
-# Dictionary-using-Python
+# Calculator-Angular
 
 ## Topics Covered Here :
-1. Extracting data from JSON file (data.json which consist the word as well as its meaning in JSON format).
-2. Providing meaning of word that user entered.
+1. All Four Data Binding Concept.
 
-## Screenshot
-![](https://github.com/BhaskarKarnatak/Dictionary-using-Python/blob/master/Dictionary_detail.png)
+## Prerequisite
+1. Create a component using ng new <Component-Name>.
+2. Install Bootstrap using ng install bootstrap --save.
+3. Add Bootstrap in Package.json file. 
