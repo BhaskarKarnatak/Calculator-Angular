@@ -1,0 +1,52 @@
+<div class="container">
+
+  <div class="input">
+    <input type="text" dir="rtl" [(ngModel)]=result disabled>
+  </div>
+
+  <div class="input-button">
+    <div class="col-xs-3 col-md-12">
+      <button id="seven" (click)=click($event)>7</button>
+      <button id="eight" (click)=click($event)>8</button>
+      <button id="nine" (click)=click($event)>9</button>
+      <button id="divide" (click)=action($event)>÷</button>
+
+    </div>
+    <div class="col-xs-3 col-md-12">
+      <button id="four" (click)=click($event)>4</button>
+      <button id="five" (click)=click($event)>5</button>
+      <button id="six" (click)=click($event)>6</button>
+      <button id="multiply" (click)=action($event)>x</button>
+
+    </div>
+    <div class="col-xs-3 col-md-12">
+      <button id="one" (click)=click($event)>1</button>
+      <button id="two" (click)=click($event)>2</button>
+      <button id="three" (click)=click($event)>3</button>
+      <button id="minus" (click)=action($event)>-</button>
+
+    </div>
+    <div class="col-xs-3 col-md-12">
+      <button id="clear" (click)=click($event)>C</button>
+      <button id="zero" (click)=click($event)>0</button>
+      <button id="equals" (click)=calculate($event)>=</button>
+      <button id="plus" (click)=action($event)>+</button>
+
+    </div>
+  </div>
+  
+</div>
+
+<div class="history">
+  
+
+  <div class="col-xs-3 col-md-12">
+    <h3>History <input type="button" class="btn btn-primary toggleButton" (click)=toggle() value={{togle}}></h3>
+
+  </div>
+
+  <h6 *ngFor="let a of historyArray">
+    <span *ngIf="togle=='x'">{{a}}</span>
+  </h6>
+
+</div>
